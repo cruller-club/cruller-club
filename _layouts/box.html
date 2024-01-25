@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+  {% include head.html %}
+
+  <body class="d-flex flex-column h-100 pt-5">
+
+    <main class="flex-shrink-0">
+      <div class="container-fluid">
+        
+        <div class="container border border-3 border-dark-subtle pt-5 pb-5">
+
+          {{ content }}
+        
+        </div>
+        <div class="container">
+          <p><small><em>{{ page.caption }}</em></small></p>
+        </div>
+
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+  {% include scripts.html %}
+</html>
